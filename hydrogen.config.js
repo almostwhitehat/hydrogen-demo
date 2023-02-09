@@ -7,7 +7,7 @@ export default defineConfig({
   /* The information that your app needs to connect to the Storefront API. */
   shopify: {
     /* The domain of your Shopify store */
-    storeDomain: "matthew-metzger.myshopify.com",
+    storeDomain: Oxygen?.env?.PUBLIC_STORE_DOMAIN,
     /* Your app's public Storefront API access token. Authenticates browser and client requests. */
     storefrontToken: Oxygen?.env?.PUBLIC_STOREFRONT_API_TOKEN,
     /* Your app's private Storefront API server (delegate access) token. Authenticates server requests. */
